@@ -288,7 +288,7 @@ int main(void) {
 
     bool changed;
     changed = slider(SLIDER_ALPHA, renderer, &i_data.alpha, -2, 2,
-                   i  3 * BORDER + WINDOW_WIDTH,
+                     3 * BORDER + WINDOW_WIDTH,
                      2 * BORDER,
                      WINDOW_WIDTH, SLIDER_HEIGHT);
 

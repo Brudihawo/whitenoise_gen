@@ -7,19 +7,22 @@ MAIN_FILES = main.c mathlib.c sound.c
 
 CUR_PATH := $(shell dirname $(realpath $(firstword ${MAKEFILE_LIST})))
 
-whgen:
+whgen: init
 	pushd ${CUR_PATH}/src \
 		&& $(CC) $(MAIN_FILES) -o whgen $(CFLAGS) $(LIBS) \
 		&& mv whgen .. \
 		&& popd
 
-debug:
+init:
+	mkdir -p data
+
+debug: init
 	pushd ${CUR_PATH}/src \
 		&& $(CC) $(MAIN_FILES) -o whgen $(DEBUG_CFLAGS) $(LIBS) \
 		&& mv whgen .. \
 		&& popd
 
-plots:
+plots: init
 	python ./scripts/plot_data.py
 
 .PHONY: clean whgen plots
