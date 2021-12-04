@@ -8,7 +8,9 @@ Run `make` to make, `make debug` for debug configuration etc.
 ```shell
 $ make
 $ ./whgen
-``` 
+```
+
+WARNING: THIS CAN CREATE VERY LOUD NOISE AND DAMAGE YOUR HEARING. BE CAREFUL WHEN USING THIS.
 
 
 
