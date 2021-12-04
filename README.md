@@ -6,8 +6,8 @@ they were nice.
 Run `make` to make, `make debug` for debug configuration etc.
 
 ```shell
-make
-./whgen
+$ make
+$ ./whgen
 ``` 
 
 
